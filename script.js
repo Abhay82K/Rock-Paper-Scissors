@@ -43,7 +43,7 @@ const playGame = (userChoice) => {
         let userWin = true;
         if(userChoice === "rock") {
             //scissors, paper
-            userWin = compChoice === "paaer"  ? false : true;
+            userWin = compChoice === "paper"  ? false : true;
         } else if(userChoice === "paper") {
             //rock, scissors
             userWin = compChoice === "scissors" ? false : true;
@@ -61,3 +61,4 @@ choices.forEach((choice) => {
         playGame(userChoice);
     });
 });
+
